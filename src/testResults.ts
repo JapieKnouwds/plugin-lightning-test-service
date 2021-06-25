@@ -200,7 +200,7 @@ class TestResults {
     let junit = '<?xml version="1.0" encoding="UTF-8"?>\n';
     junit += '<testsuites>\n';
     // REVIEWME: attempt to replace "(root)" via name and classname
-    junit += `    <testsuite name="${this.suitename}" `;
+    junit += `    <testsuite name="${_.escape(this.suitename)}" `;
     junit += `timestamp="${this.testStartTime.format()}" `;
     junit += `hostname="${this.config.instanceUrl}" `;
     junit += `tests="${this.total}" `;
@@ -224,9 +224,9 @@ class TestResults {
       if (this.getTestNamespace(test)) {
         classname = this.getTestNamespace(test) + classname;
       }
-      junit += `        <testcase name="${this.getTestName(
+      junit += `        <testcase name="${_.escape(this.getTestName(
         test
-      )}" classname="${classname}" time="${
+      ))}" classname="${classname}" time="${
         test.RunTime ? msToSeconds(test.RunTime) : 0
       }">\n`;
 
