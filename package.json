@@ -1,9 +1,9 @@
 {
-  "name": "plugin-lightning-testing-service-custom",
-  "description": "SFDX Pluging for Lightning Test Service",
+  "name": "nintex-plugin-lightning-testing-service",
+  "description": "Nintex SFDX Pluging for Lightning Test Service. Forked from https://github.com/forcedotcom/plugin-lightning-test-service to fix bugs since that is not maintained anymore.",
   "version": "1.0.1",
   "author": "Salesforce @salesforce",
-  "bugs": "https://github.com/JapieKnouwds/plugin-lightning-test-service/issues",
+  "bugs": "https://dev.azure.com/nintex/Nintex/_git/docgen-plugin-lightning-test-service",
   "dependencies": {
     "@oclif/command": "^1",
     "@oclif/config": "^1",
@@ -47,7 +47,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/JapieKnouwds/plugin-lightning-test-service",
+  "homepage": "https://dev.azure.com/nintex/Nintex/_git/docgen-plugin-lightning-test-service",
   "keywords": [
     "sfdx-plugin"
   ],
@@ -64,7 +64,10 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "JapieKnouwds/plugin-lightning-test-service",
+  "repository": {
+    "url":"https://pkgs.dev.azure.com/nintex/_packaging/DocGen-Dev%40Local/npm/registry/",
+    "type": "git"
+  },
   "scripts": {
     "postpack": "del -f oclif.manifest.json",
     "posttest": "tslint -p test -t stylish",

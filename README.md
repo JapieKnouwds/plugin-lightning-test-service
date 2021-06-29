@@ -12,11 +12,11 @@ SFDX Pluging for the [Lightning Test Service](https://github.com/forcedotcom/Lig
     <!-- install -->
     <!-- usage -->
 ```sh-session
-$ npm install -g plugin-lightning-testing-service-custom
+$ npm install -g nintex-plugin-lightning-testing-service
 $ sfdx COMMAND
 running command...
 $ sfdx (-v|--version|version)
-plugin-lightning-testing-service-custom/1.0.1 win32-x64 node-v14.15.5
+nintex-plugin-lightning-testing-service/1.0.1 win32-x64 node-v14.15.5
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
@@ -24,11 +24,11 @@ USAGE
 ```
 <!-- usagestop -->
 ```sh-session
-$ npm install -g plugin-lightning-testing-service-custom
+$ npm install -g nintex-plugin-lightning-testing-service
 $ sfdx COMMAND
 running command...
 $ sfdx (-v|--version|version)
-plugin-lightning-testing-service-custom/1.0.1 darwin-x64 node-v12.10.0
+nintex-plugin-lightning-testing-service/1.0.1 darwin-x64 node-v12.10.0
 $ sfdx --help [COMMAND]
 USAGE
   $ sfdx COMMAND
@@ -76,7 +76,7 @@ EXAMPLES
   sfdx aura-test:install -t jasmine
 ```
 
-_See code: [src/commands/aura-test/install.ts](https://github.com/JapieKnouwds/plugin-lightning-test-service/blob/v1.0.1/src/commands/aura-test/install.ts)_
+_See code: [src/commands/aura-test/install.ts](https://dev.azure.com/nintex/Nintex/_git/docgen-plugin-lightning-test-service?path=%2Fsrc%2Fcommands%2Faura-test%2Finstall.ts)_
 
 ## `sfdx aura-test:run [-r <string>] [-a <string>] [-d <filepath>] [-f <filepath>] [-o] [-t <number>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
@@ -123,7 +123,7 @@ EXAMPLES
   $ sfdx aura-test:run -f config/myConfigFile.json -d testResultFolder
 ```
 
-_See code: [src/commands/aura-test/run.ts](https://github.com/JapieKnouwds/plugin-lightning-test-service/blob/v1.0.1/src/commands/aura-test/run.ts)_
+_See code: [src/commands/aura-test/run.ts](https://dev.azure.com/nintex/Nintex/_git/docgen-plugin-lightning-test-service?path=%2Fsrc%2Fcommands%2Faura-test%2Frun.ts)_
 <!-- commandsstop -->
 * [`sfdx aura-test:install [-r <string>] [-t] [-w <number>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-aura-testinstall--r-string--t--w-number--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
 * [`sfdx aura-test:run [-r <string>] [-a <string>] [-d <filepath>] [-f <filepath>] [-o] [-t <number>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-aura-testrun--r-string--a-string--d-filepath--f-filepath--o--t-number--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
